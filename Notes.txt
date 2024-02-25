@@ -1,0 +1,12 @@
+1. string properties and Method
+
+- when you use properties, we don't use () whereas when we use method we use 
+  parathesis
+
+- example- 
+
+
+let firstName = "Ajay"
+
+      check = firstName.length;
+
