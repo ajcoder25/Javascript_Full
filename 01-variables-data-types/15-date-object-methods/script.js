@@ -18,5 +18,12 @@ x = d.valueOf();
 x = d.getFullYear();
 
 
+// x = `${d.getFullYear()} - ${d.getMonth() + 1 }- ${d.getDate()}`;
+
+
+// 
+
+x = Intl.DateTimeFormat('default').format(d);
+
 
 console.log(x)
