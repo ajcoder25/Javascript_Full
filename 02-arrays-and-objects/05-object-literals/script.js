@@ -8,3 +8,6 @@ const person = {
      isAdmin:true,
      address:{ street: '123 Main street st'}
 }
+
+
+// we can 
