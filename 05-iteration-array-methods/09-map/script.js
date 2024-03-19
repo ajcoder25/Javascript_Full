@@ -111,5 +111,37 @@ console.log(sum)
 
 
 
-const newNumber = [1,2,3,4,5]
+const newNumber = [1,2,3,4,5,6,8,9,10]
 
+
+// const oldNumber = newNumber.map((newNumber) => newNumber *2);
+
+
+// console.log(oldNumber);
+
+
+
+// Same with forEach
+
+const addNumber = [];
+
+newNumber.forEach((newNumber)=>{
+
+  addNumber.push(newNumber+1);
+
+  console.log(addNumber)
+})
+
+
+
+///Learning Map, filter and reduce 
+
+
+const month = ['January', 'februray', 'March','April', 'May']
+
+
+
+month.map((month,index) =>{
+  console.log(index + 1 , month)
+  return month.toUpperCase()
+})
