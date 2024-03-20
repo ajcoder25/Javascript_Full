@@ -37,5 +37,52 @@ const people = [
   },
 ];
 
+
+
+
+// 
+
+const youngPeople = people.filter((checkPeople) =>  checkPeople.age <= 25) .map((checkPeople) => ({
+  name: `${checkPeople.firstName} ${checkPeople.lastName}`,
+  Email: `${checkPeople.email}`
+  
+}));
+console.log(youngPeople)
+
+
+
+
+
+
+
+
+
 // Challenge 2
 const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+
+// we can solve by using the reduce method 
+
+const postiveNumber = numbers.reduce((ac, cv)=>{
+  if (cv > 0){
+    return ac + cv;
+  } else{
+    return ac;
+  }
+  }, 0);
+
+  console.log(postiveNumber);
+
+
+
+
+  // challenge 3 
+
+  const words = ['coder','programmer', 'developer']
+
+const cWords = words.map((word) => {
+  return word[0].toUpperCase() + word.slice(1);
+});
+
+
+console.log(cWords);
