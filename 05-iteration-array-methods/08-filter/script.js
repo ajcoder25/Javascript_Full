@@ -1,84 +1,107 @@
-const number = [1,2,3,4,5,6,7,8,9,10]
+//tag name syntax
+
+document.getElementsByTagName('tagName')
 
 
-// const evenNumber = number.filter(function(number){
-//  return number %2 ===0;
-// });
+const allHeading = document.getElementsByTagName('h1')
 
-// console.log(evenNumber);
+console.log(allHeading);
 
 
+// to iterate over the every single items
 
-//short version
+for (let i = 0; i < allHeading.length; i++){
+    console.log(allHeading[i]);
 
-
-// const evenNumber = number.filter((number) => number%2===0)
-
-
-//for Each
+}
 
 
-let evenNumber = [];
-
-number.forEach((number) => {
-    if(number %2 ===0){
-        evenNumber.push(number);
-    }
-});
+// ClassName 
 
 
-console.log(evenNumber);
+//syntax 
+ document.getElementsByClassName('')
 
 
+ const classHeading = document.getElementsByClassName('first')
+ console.log(classHeading);
 
 
-// const checkRettail = Companies.filter((companies) => companies == 'retail')
+ for(let i = 0; i<classHeading.length;i++){
+    console.log(classHeading[i]);
+ }
 
 
-// console.log(checkRettail);
+ //selecting by Id 
 
-const companies = [
-    { name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
-    { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
-    { name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
-    { name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
-    { name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
-    { name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
-    { name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
-    { name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
-    { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
-  ];
+//  syntax 
+  const firstTitle =  document.getElementById('first-title')
+
+  console.log(firstTitle);
 
 
+  //querySelector
 
-// const checkRetail = companies.filter((retailName) => retailName.category ==='Retail')
-
-
-const checkCompany = companies.filter((company) =>
-company.start >= 1980 && company.end <= 2005)
-console.log(checkCompany);
+  document.querySelector('h1')
+  document.querySelector('.firstName')
+  document.querySelector('#first-title');
 
 
-// get the comapny last 10 years
+  //queryselectorAll
 
-const tenyears = companies.filter((company) =>
-company.end - company.start >= 10)
+  const UsingSelector = document.querySelectorAll('.first');
 
-console.log(tenyears);
-
+  console.log(UsingSelector);
 
 
+  //To loop through each nodelist
 
-//Map
+  for(let i =0; i < UsingSelector.length; i++){
+    console.log(UsingSelector[i])
+  }
 
-const numbers = [1,2,3,4,5];
-
-// const doubledNumber = numbers.map((number) => number*2)
-
-
-//triple 
+//   UsingSelector.forEach(iterate => console.log(iterate))
 
 
-const trippleNumber = numbers.map((number) => number *3)
+//adding the attribute 
 
-console.log(trippleNumber);
+// const adding = document.querySelectorAll('h1')
+// adding[4].className = 'five'
+
+// console.log(adding);
+
+// for(let i = 0; i< adding.length; i++){
+//     console.log(adding[i])
+// }
+
+
+// adding Attribute 
+
+const addingSomething = document.querySelectorAll('h1')
+
+addingSomething[4].setAttribute('class', 'title')
+
+addingSomething[3].classList.add('title', 'header-title')
+
+addingSomething[3].classList.remove('title','header-title')
+
+console.log(addingSomething);
+
+
+//adding text to Html element
+
+const titles = document.querySelectorAll('h1')
+titles[4].textContent = 'Ajay is great'
+
+for(let i = 0; i<titles.length; i++){
+
+    console.log(titles[i])
+}
+
+//using the innerHtml 
+
+const innerTag = document.getElementById('second-title')
+
+innerTag.innerHTML = '<p>Win over the </p>';
+
+console.log(innerTag.innerTag);
