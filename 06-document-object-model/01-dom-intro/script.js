@@ -1,52 +1,42 @@
-// Change the bg color to red
+const FirstPara = document.getElementsByTagName('p');
 
-// document.body.style.background = "red";
-
-// setTimeout(() => document.body.style.background = "", 1000);
+console.log('checkP:', FirstPara[0].textContent)
 
 
-// Change it back after 1 sec
-
-// document.querySelector()
-
-document.body.style.background = 'red';
-
-setTimeout(() =>document.body.style.background = '',3000);
+// Q-2
 
 
+const selectingId = document.querySelector('#first.textContent')
 
-// We can change it by query selector
-
-
-// console.log(document.querySelector('h1'));
-// console.log(docuement.querySelector('#app-title'))
-// console.log(document.querySelector('.contaniner'));
-// console.log(document.querySelector(''));
+console.log('First Id:', selectingId);
 
 
-// // getting element by tagName
+//Q-3, Q-4
 
 
-// // document.getElementsByTagName('Tagname')
+const selectingAll = document.querySelectorAll('p');
 
+for(let i = 0; i < selectingAll.length; i++){
+ console.log(selectingAll[i])
 
-// const allTitles = document.getElementsByTagName('h1');
-
-// console.log(allTitles);
-// console.log(allTitles.length);
-
-
-// // to print all the element 
-
-// for(let i = 0; i< allTitles.length; i++){
-//     console.log(allTitles[i])
-// }
-
-// document.body.innerHTML = '<h1> Hello World</h1>'
-
-// document.write('hello from js')
+}
 
 
 
-const main = document.getElementById('main');
-main.innerHTML = '<h1> Hello From main ,</h1>';
+// Q-5  changing the text 
+
+
+const changing = document.querySelector('#fourth')
+
+changing.textContent = 'You can do it '
+
+
+
+// Q-6
+
+const paragraphs = document.querySelectorAll('p');
+
+paragraphs.forEach(paragraph => {
+  paragraph.id = 'uniqueId-' + Math.random();
+  paragraph.classList.add('commonClass');
+});

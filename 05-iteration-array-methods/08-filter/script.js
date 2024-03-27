@@ -1,64 +1,64 @@
-//tag name syntax
+// //tag name syntax
 
-document.getElementsByTagName('tagName')
-
-
-const allHeading = document.getElementsByTagName('h1')
-
-console.log(allHeading);
+// document.getElementsByTagName('tagName')
 
 
-// to iterate over the every single items
+// const allHeading = document.getElementsByTagName('h1')
 
-for (let i = 0; i < allHeading.length; i++){
-    console.log(allHeading[i]);
-
-}
+// console.log(allHeading);
 
 
-// ClassName 
+// // to iterate over the every single items
+
+// for (let i = 0; i < allHeading.length; i++){
+//     console.log(allHeading[i]);
+
+// }
 
 
-//syntax 
- document.getElementsByClassName('')
+// // ClassName 
 
 
- const classHeading = document.getElementsByClassName('first')
- console.log(classHeading);
+// //syntax 
+//  document.getElementsByClassName('')
 
 
- for(let i = 0; i<classHeading.length;i++){
-    console.log(classHeading[i]);
- }
+//  const classHeading = document.getElementsByClassName('first')
+//  console.log(classHeading);
 
 
- //selecting by Id 
-
-//  syntax 
-  const firstTitle =  document.getElementById('first-title')
-
-  console.log(firstTitle);
+//  for(let i = 0; i<classHeading.length;i++){
+//     console.log(classHeading[i]);
+//  }
 
 
-  //querySelector
+//  //selecting by Id 
 
-  document.querySelector('h1')
-  document.querySelector('.firstName')
-  document.querySelector('#first-title');
+// //  syntax 
+//   const firstTitle =  document.getElementById('first-title')
 
-
-  //queryselectorAll
-
-  const UsingSelector = document.querySelectorAll('.first');
-
-  console.log(UsingSelector);
+//   console.log(firstTitle);
 
 
-  //To loop through each nodelist
+//   //querySelector
 
-  for(let i =0; i < UsingSelector.length; i++){
-    console.log(UsingSelector[i])
-  }
+//   document.querySelector('h1')
+//   document.querySelector('.firstName')
+//   document.querySelector('#first-title');
+
+
+//   //queryselectorAll
+
+//   const UsingSelector = document.querySelectorAll('.first');
+
+//   console.log(UsingSelector);
+
+
+//   //To loop through each nodelist
+
+//   for(let i =0; i < UsingSelector.length; i++){
+//     console.log(UsingSelector[i])
+//   }
 
 //   UsingSelector.forEach(iterate => console.log(iterate))
 
@@ -77,31 +77,49 @@ for (let i = 0; i < allHeading.length; i++){
 
 // adding Attribute 
 
-const addingSomething = document.querySelectorAll('h1')
+// const addingSomething = document.querySelectorAll('h1')
 
-addingSomething[4].setAttribute('class', 'title')
+// addingSomething[4].setAttribute('class', 'title')
 
-addingSomething[3].classList.add('title', 'header-title')
+// addingSomething[3].classList.add('title', 'header-title')
 
-addingSomething[3].classList.remove('title','header-title')
+// addingSomething[3].classList.remove('title','header-title')
 
-console.log(addingSomething);
+// console.log(addingSomething);
 
 
 //adding text to Html element
 
-const titles = document.querySelectorAll('h1')
-titles[4].textContent = 'Ajay is great'
+// const titles = document.querySelectorAll('h1')
+// titles[4].textContent = 'Ajay is great'
 
-for(let i = 0; i<titles.length; i++){
+// for(let i = 0; i<titles.length; i++){
 
-    console.log(titles[i])
-}
+//     console.log(titles[i])
+// }
 
 //using the innerHtml 
 
-const innerTag = document.getElementById('second-title')
+// const innerTag = document.getElementById('second-title')
 
-innerTag.innerHTML = '<p>Win over the </p>';
+// innerTag.innerHTML = '<p>Win over the </p>';
 
-console.log(innerTag.innerTag);
+// console.log(innerTag.innerTag);
+
+
+// ///// Inner Html and text content 
+
+
+// const changing = document.querySelector('h1')
+// changing.innerHTML = '<p> this is my time </p>'
+
+// console.log(changing)
+
+
+// Remove the child using inner Html
+
+const removing = document.querySelector('ul')
+ removing.innerHTML = '';
+
+ console.log(removing);
+
