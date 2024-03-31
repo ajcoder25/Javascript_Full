@@ -26,17 +26,40 @@ for(let i = 0; i < selectingAll.length; i++){
 // Q-5  changing the text 
 
 
-const changing = document.querySelector('#fourth')
+// const changing = document.querySelector('#fourth')
 
-changing.textContent = 'You can do it '
+// changing.textContent = 'You can do it '
 
 
 
 // Q-6
 
-const paragraphs = document.querySelectorAll('p');
+// const paragraphs = document.querySelectorAll('p');
 
-paragraphs.forEach(paragraph => {
-  paragraph.id = 'uniqueId-' + Math.random();
-  paragraph.classList.add('commonClass');
-});
+// paragraphs.forEach(paragraph => {
+//   paragraph.id = 'uniqueId-' + Math.random();
+//   paragraph.classList.add('commonClass');
+// });
+
+
+
+// Set Id and class Attribute
+
+// const change = document.querySelectorAll('p')
+//     change[0].setAttribute('class', 'title')
+//     change[0].setAttribute('id','New-title')
+
+
+/// adding attribute
+
+// const changeNew = document.querySelectorAll('p')
+//     changeNew[0].id = 'title'
+//     changeNew[1].className = 'New'
+
+
+//     //
+
+
+
+//Excercise: Level 2
+
