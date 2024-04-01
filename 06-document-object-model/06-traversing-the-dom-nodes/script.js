@@ -1,14 +1,34 @@
-let output;
+// const changeFirst = document.querySelector('#first')
 
-const parent = document.querySelector('.parent');
-
-output = parent.childNodes;
-output = parent.childNodes[0].textContent;
-output = parent
-
-console.log(output)
+// changeFirst.style.color = 'red'
+// changeFirst.style.backgroundColor = "yellow"
+// changeFirst.style.fontSize = '24px'
+// changeFirst.style.border = "2px solid red"
 
 
+// //Exercise- 2
 
-// 0: whitespace is also consider it as the text
-// 
+// const changeAll = document.querySelectorAll('div')
+
+// changeAll.forEach((check,i) =>{
+//     if(i % 2 === 0){
+//         check.style.color = 'red'
+//     }
+//     else{
+//         check.style.color = 'green'
+//     }
+// });
+
+
+//Exercise- 3
+
+const changeText = document.querySelectorAll('p');
+changeText[0].id = 'first'
+changeText.textContent = "He is Learning DOM"
+
+console.log(changeText);
+
+
+
+
+
