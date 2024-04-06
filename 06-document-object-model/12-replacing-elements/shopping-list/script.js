@@ -35,3 +35,19 @@ function replaceBananna(){
 }
 
 replaceBananna();
+
+
+// Replace all the iteam
+
+
+function replaceAllItems(){
+
+    const lis = document.querySelectorAll('li');
+
+    lis.forEach((item,index) =>{
+        item.outerHTML = 'replace All'
+    })
+
+}
+
+replaceAllItems();
