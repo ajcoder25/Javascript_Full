@@ -19,7 +19,7 @@ const card = document.querySelector('.card')
 
 // when I click on + it should create the new div
 
-
+let count = 0;
 const container = document.querySelector('.container')
 
 card.addEventListener('click',function(){
@@ -32,6 +32,9 @@ card.addEventListener('click',function(){
     // step 2nd 
 
     newCard.classList.add('card')
+    newCard.innerText = count++
+
+    
 
     
     // step3rd append to parent 
@@ -49,3 +52,6 @@ card.addEventListener('click',function(){
    
 
 })
+
+
+// using the clone node 
