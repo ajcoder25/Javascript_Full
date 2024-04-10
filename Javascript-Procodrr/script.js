@@ -38,3 +38,16 @@ const form = document.querySelector('form')
 form.addEventListener('click',(e)=>{
     console.log('you have submit your form')
 })
+
+
+
+// KeyBoard Events
+
+
+const h1 = document.querySelector('h1')
+
+h1.addEventListener('keypress', (e) =>{
+
+})
+
+
