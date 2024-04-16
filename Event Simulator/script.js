@@ -9,3 +9,12 @@ addCardBtn.addEventListener('click', () => {
     newCard.innerText = count++
     container.append(newCard)
 })
+
+
+const intervalId = setInterval(() =>{
+if( count > 1000){
+    clearInterval(intervalId)
+}
+     
+    addCardBtn.click()
+},5)
