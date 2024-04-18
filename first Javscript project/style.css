@@ -6,7 +6,7 @@ body{
 }
 
 main{
-    padding: 0px 16px;
+    padding: 0px 16px 32px;
 }
 .title{
     font-size:64px;
@@ -39,7 +39,7 @@ main{
 .progress-label{
     font-size: 14px;
     color: #858585;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     
 }
 
@@ -65,17 +65,21 @@ main{
 }
 
 .error-label{
-     font-size: 14px;
+     font-size: 12px;
      color:#FF5151;
+     margin-top:4px;
+    display:none;
 }
 
 .goal-container{
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 17px;
+    border: 1px solid rgba(3, 3, 3, 0.1);
+    border-radius: 14px;
     height: 82px;
     display:flex;
     align-items: center;
-    padding:0 22px;
+    padding:22px 22px;
+    background-color: #FFFFFF ;
+    margin-bottom:42px;
     
 }
 
@@ -83,9 +87,60 @@ main{
                height:24px;
                width:24px;
                border: 2px solid rgba(97,72,28,0.3);
-               border-radius: 17px;
+               border-radius: 50px;
+               flex-shrink: 0;
+               cursor: pointer;
+               
                
 }
+
+.goal-input{
+      /* border:none; */
+      margin-left:22px; 
+      font-family: inherit;
+      font-size: 16px;
+      border:none;
+      outline: none; 
+      font-weight: 500;
+      flex-grow:1;
+      align-self: stretch;
+      width:100%;
+}
+
+.quote{
+     font-weight: 500;
+     font-size:16px;
+     text-align: center;
+}
+
+.made-with{
+    font-weight:500;
+    font-size: 10px;
+    text-align:center;
+    margin-top: 64px;
+}
+.goal-input::placeholder{
+    color: #D9D9D9;
+}
+
+.Completed .custom-checbox{
+       background: #48A300;
+       border-color:#48A300
+}
+
+.check-icon{
+    display:none;
+}
+
+.Completed .check-icon{
+    display:block;
+}
+
+.Completed .goal-input{
+    color: #48a300;
+    text-decoration-line: line-through;
+}
+
 @media (max-width: 768px){
     .title{
         font-size: 32px;
@@ -93,6 +148,24 @@ main{
 
 
     .app-container{
-        padding: 16px 24px ;
+        padding: 16px 32px ;
+    }
+
+    .goal-conatainer{
+        height:64px;
+        margin-bottom:24px ;
+        border-radius:12px;
+    }
+
+    .custom-checbox{
+        height:20px;
+        width:20px;
+    }
+
+    .made-with{
+        margin-top:32px;
+    }
+    .progress-bar{
+        height:24px;
     }
 }
