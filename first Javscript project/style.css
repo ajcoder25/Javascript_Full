@@ -90,8 +90,14 @@ main{
                border-radius: 50px;
                flex-shrink: 0;
                cursor: pointer;
+               display:flex;
+               align-items: center;
+               justify-content: center;
                
                
+}
+.check-icon{
+    display: none;
 }
 
 .goal-input{
@@ -109,7 +115,7 @@ main{
 
 .quote{
      font-weight: 500;
-     font-size:16px;
+    
      text-align: center;
 }
 
@@ -123,14 +129,12 @@ main{
     color: #D9D9D9;
 }
 
-.Completed .custom-checbox{
+.Completed .custom-checkbox{
        background: #48A300;
        border-color:#48A300
 }
 
-.check-icon{
-    display:none;
-}
+
 
 .Completed .check-icon{
     display:block;
