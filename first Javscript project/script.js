@@ -1,8 +1,10 @@
-const checkBoxList = document.querySelectorAll(".custom-checkbox");
+const checkBoxList = document.querySelectorAll('.custom-checkbox')
 
-checkBoxList.forEach((checkbox) =>
-{
+
+
+//story: We iterate through all the item to get what are those in checkbox
+checkBoxList.forEach((checkbox) =>{
     checkbox.addEventListener('click',(e) =>{
-        console.log('checkboxClicked')
+     checkbox.parentElement.classList.toggle('Completed')
     })
-})
+});

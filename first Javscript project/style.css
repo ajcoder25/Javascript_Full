@@ -1,4 +1,6 @@
-/* To set the background color */
+*{
+    box-sizing: border-box;
+}
 
 body{
     background: rgba(72, 163, 0, 0.07);
@@ -67,7 +69,7 @@ main{
 .error-label{
      font-size: 12px;
      color:#FF5151;
-     margin-top:4px;
+     margin-top:8px;
     display:none;
 }
 
@@ -80,24 +82,29 @@ main{
     padding:22px 22px;
     background-color: #FFFFFF ;
     margin-bottom:42px;
+    /* I added it */
+    margin-top:50px;
     
 }
 
-.custom-checbox{
+.custom-checkbox{
                height:24px;
                width:24px;
                border: 2px solid rgba(97,72,28,0.3);
-               border-radius: 50px;
+               border-radius: 50%;
                flex-shrink: 0;
                cursor: pointer;
                display:flex;
                align-items: center;
+               display:inline-block;
                justify-content: center;
                
                
+               
 }
+
 .check-icon{
-    display: none;
+    display:none;
 }
 
 .goal-input{
