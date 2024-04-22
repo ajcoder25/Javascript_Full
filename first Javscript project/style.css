@@ -54,7 +54,7 @@ main{
 
 .progress-value{
     height: 100%;
-    width: 66%;
+    width:0;
     background-color: #48A300;
     border-radius:15px;
     font-weight: 500;
@@ -63,9 +63,14 @@ main{
     color:#EEFFE0;
     display:flex;
     align-items: center;
-    padding-left: 20px;
+   
+   
+    overflow:hidden;
 }
 
+.progress-value span{
+    padding-left: 20px ;
+}
 .error-label{
      font-size: 12px;
      color:#FF5151;
@@ -150,6 +155,10 @@ main{
 .Completed .goal-input{
     color: #48a300;
     text-decoration-line: line-through;
+}
+
+.show-error .error-label{
+    display:block;
 }
 
 @media (max-width: 768px){
